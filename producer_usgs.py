@@ -1,5 +1,6 @@
 import time
 import requests
+import socket
 from confluent_kafka.avro import AvroProducer
 from confluent_kafka import avro
 
@@ -7,13 +8,19 @@ from confluent_kafka import avro
 USGS_URL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
 
 KAFKA_CONF = {
-    "bootstrap.servers": "localhost:9092",
-    "schema.registry.url": "http://localhost:8081"  # adjust for your Schema Registry endpoint
+    'bootstrap.servers': 'pkc-619z3.us-east1.gcp.confluent.cloud:9092',
+    'security.protocol': 'SASL_SSL',
+    'sasl.mechanism': 'PLAIN',
+    'sasl.username': 'C5HS5POGL2M5URBY',
+    'sasl.password': 'cflt2cVULwS8cyE1Z//PszlKQcqbNA4pdl3AdhVzGQR6ZYitS3bEAmNVtM3sWg9Q',
+    'client.id': socket.gethostname(),
+    'schema.registry.url': 'https://psrc-zgxmd0p.us-east1.gcp.confluent.cloud',
+    'basic.auth.credentials.source': 'USER_INFO',
+    'schema.registry.basic.auth.user.info': '<SR_API_KEY>:<SR_API_SECRET>'
 }
 
 TOPIC = "earthquake-avro-stream"
 
-# Define Avro Schema
 value_schema_str = """
 {
   "type": "record",
@@ -32,11 +39,14 @@ value_schema_str = """
 """
 
 value_schema = avro.loads(value_schema_str)
-
-# --- Create Avro Producer ---
 producer = AvroProducer(KAFKA_CONF, default_value_schema=value_schema)
-
 seen_ids = set()
+
+def delivery_report(err, msg):
+    if err is not None:
+        print(f" Delivery failed: {err}")
+    else:
+        print(f" Message delivered to {msg.topic()} [{msg.partition()}]")
 
 def fetch_and_send():
     resp = requests.get(USGS_URL, timeout=20)
@@ -62,14 +72,17 @@ def fetch_and_send():
             "depth_km": coords[2]
         }
 
-        producer.produce(topic=TOPIC, value=msg)
+        producer.produce(topic=TOPIC, value=msg, callback=delivery_report)
+        producer.poll(0)
 
     producer.flush()
 
 if __name__ == "__main__":
     while True:
         try:
+            print(" Fetching latest earthquake data...")
             fetch_and_send()
+            print(" Batch sent. Waiting 60s...")
         except Exception as e:
-            print("Error:", e)
+            print(" Error:", e)
         time.sleep(60)
