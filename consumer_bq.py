@@ -41,7 +41,13 @@ value_schema_str = """
     {"name": "url", "type": ["null", "string"], "default": null},
     {"name": "lon", "type": ["null", "double"], "default": null},
     {"name": "lat", "type": ["null", "double"], "default": null},
-    {"name": "depth_km", "type": ["null", "double"], "default": null}
+    {"name": "depth_km", "type": ["null", "double"], "default": null},
+    {"name": "felt", "type": ["null", "int"], "default": null},
+    {"name": "cdi", "type": ["null", "float"], "default": null},
+    {"name": "mmi", "type": ["null", "float"], "default": null},
+    {"name": "alert", "type": ["null", "string"], "default": null},
+    {"name": "tsunami", "type": ["null", "int"], "default": null},
+    {"name": "type", "type": ["null", "string"], "default": null}
   ]
 }
 """
@@ -87,7 +93,13 @@ while True:
             "url": record.get("url"),
             "lon": record.get("lon"),
             "lat": record.get("lat"),
-            "depth_km": record.get("depth_km")
+            "depth_km": record.get("depth_km"),
+            "felt": record.get("felt"),
+            "cdi": record.get("cdi"),
+            "mmi": record.get("mmi"),
+            "alert": record.get("alert"),
+            "tsunami": record.get("tsunami"),
+            "type": record.get("type")
         }
 
         # Insert into BigQuery

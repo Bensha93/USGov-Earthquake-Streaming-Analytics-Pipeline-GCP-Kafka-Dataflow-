@@ -1,0 +1,165 @@
+[0m14:11:06.186203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9cc7d83f80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9cc8349d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9cc7df91f0>]}
+
+
+============================== 14:11:06.221391 | 5d860550-2cfc-4f95-b66e-058037252d57 ==============================
+[0m14:11:06.221391 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m14:11:06.222419 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'cache_selected_only': 'False', 'introspect': 'True', 'printer_width': '80', 'log_cache_events': 'False', 'write_json': 'True', 'warn_error': 'None', 'partial_parse': 'True', 'version_check': 'True', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt init usgs_dbt_project', 'no_print': 'None', 'empty': 'None', 'indirect_selection': 'eager', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'use_colors': 'True', 'fail_fast': 'False', 'profiles_dir': '/home/bensha02019/.dbt'}
+[0m14:11:06.235393 [debug] [MainThread]: Starter project path: /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m14:11:06.239136 [info ] [MainThread]: 
+Your new dbt project "usgs_dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:11:06.240096 [info ] [MainThread]: Setting up your profile.
+[0m14:15:00.600200 [error] [MainThread]: Encountered an error:
+
+[0m14:15:00.603556 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/lib/python3.12/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/lib/python3.12/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/lib/python3.12/site-packages/dbt/task/init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/lib/python3.12/site-packages/dbt/task/init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/lib/python3.12/site-packages/dbt/task/init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/lib/python3.12/site-packages/dbt/task/init.py", line 116, in generate_target_from_input
+    target = self.generate_target_from_input(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/lib/python3.12/site-packages/dbt/task/init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "/home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/lib/python3.12/site-packages/click/termui.py", line 168, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/lib/python3.12/site-packages/click/termui.py", line 151, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m14:15:00.605792 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 234.49683, "process_in_blocks": "44280", "process_kernel_time": 0.672228, "process_mem_max_rss": "366292", "process_out_blocks": "80", "process_user_time": 5.234528}
+[0m14:15:00.607271 [debug] [MainThread]: Command `dbt init` failed at 14:15:00.607056 after 234.50 seconds
+[0m14:15:00.608192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9cc98d36b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9ca761ce30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9ca7c3f7a0>]}
+[0m14:15:00.608972 [debug] [MainThread]: Flushing usage events
+[0m14:15:01.066678 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:18:17.735756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a08806f2330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0881ab6270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a08808b36e0>]}
+
+
+============================== 14:18:17.740830 | 6aaacb6a-0ece-4706-8950-01b54fac0c19 ==============================
+[0m14:18:17.740830 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m14:18:17.741904 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'log_path': 'logs', 'log_cache_events': 'False', 'profiles_dir': '/home/bensha02019/.dbt', 'invocation_command': 'dbt init usgs_dbt_project', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'write_json': 'True', 'version_check': 'True', 'introspect': 'True', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'printer_width': '80', 'static_parser': 'True', 'quiet': 'False', 'log_format': 'default', 'no_print': 'None', 'partial_parse': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'debug': 'False'}
+[0m14:18:17.755038 [debug] [MainThread]: Starter project path: /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m14:18:17.758363 [info ] [MainThread]: 
+Your new dbt project "usgs_dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:18:17.759234 [info ] [MainThread]: Setting up your profile.
+[0m14:26:00.577961 [info ] [MainThread]: Profile usgs_dbt_project written to /home/bensha02019/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:26:00.580103 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 462.9255, "process_in_blocks": "0", "process_kernel_time": 0.657765, "process_mem_max_rss": "366296", "process_out_blocks": "80", "process_user_time": 5.63033}
+[0m14:26:00.581616 [debug] [MainThread]: Command `dbt init` succeeded at 14:26:00.581398 after 462.93 seconds
+[0m14:26:00.582347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a088047fa40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a08608c1460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a085fdbef60>]}
+[0m14:26:00.583252 [debug] [MainThread]: Flushing usage events
+[0m14:26:01.014677 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:26:19.724068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e50c05592b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e50be27c860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e50bdc31760>]}
+
+
+============================== 14:26:19.728926 | bd11b6eb-08af-4eb0-9f14-1bae86f08d6b ==============================
+[0m14:26:19.728926 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m14:26:19.729873 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'fail_fast': 'False', 'printer_width': '80', 'write_json': 'True', 'debug': 'False', 'introspect': 'True', 'profiles_dir': '/home/bensha02019/.dbt', 'warn_error': 'None', 'log_format': 'default', 'log_path': 'logs', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'invocation_command': 'dbt debug', 'version_check': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'static_parser': 'True', 'partial_parse': 'True', 'target_path': 'None', 'use_colors': 'True'}
+[0m14:26:19.742367 [info ] [MainThread]: dbt version: 1.11.0-b3
+[0m14:26:19.743071 [info ] [MainThread]: python version: 3.12.3
+[0m14:26:19.743620 [info ] [MainThread]: python path: /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/bin/python
+[0m14:26:19.744210 [info ] [MainThread]: os info: Linux-6.6.105+-x86_64-with-glibc2.39
+[0m14:26:22.934679 [info ] [MainThread]: Using profiles dir at /home/bensha02019/.dbt
+[0m14:26:22.935533 [info ] [MainThread]: Using profiles.yml file at /home/bensha02019/.dbt/profiles.yml
+[0m14:26:22.936179 [info ] [MainThread]: Using dbt_project.yml file at /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/dbt_project.yml
+[0m14:26:22.936773 [info ] [MainThread]: adapter type: bigquery
+[0m14:26:22.937315 [info ] [MainThread]: adapter version: 1.10.2
+[0m14:26:22.937897 [info ] [MainThread]: Configuration:
+[0m14:26:22.938428 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:26:22.938976 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:26:22.939505 [info ] [MainThread]: Required dependencies:
+[0m14:26:22.940183 [debug] [MainThread]: Executing "git --help"
+[0m14:26:22.943906 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:26:22.944524 [debug] [MainThread]: STDERR: "b''"
+[0m14:26:22.945084 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:26:22.945718 [info ] [MainThread]: Connection:
+[0m14:26:22.946353 [info ] [MainThread]:   method: service-account
+[0m14:26:22.946937 [info ] [MainThread]:   database: earthquake-475820
+[0m14:26:22.947513 [info ] [MainThread]:   execution_project: earthquake-475820
+[0m14:26:22.948151 [info ] [MainThread]:   schema: earthquake_data
+[0m14:26:22.948788 [info ] [MainThread]:   location: US
+[0m14:26:22.949405 [info ] [MainThread]:   priority: interactive
+[0m14:26:22.950094 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m14:26:22.950719 [info ] [MainThread]:   impersonate_service_account: None
+[0m14:26:22.951347 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m14:26:22.952110 [info ] [MainThread]:   job_retries: 1
+[0m14:26:22.952842 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m14:26:22.953554 [info ] [MainThread]:   job_execution_timeout_seconds: 600
+[0m14:26:22.954328 [info ] [MainThread]:   timeout_seconds: 600
+[0m14:26:22.955105 [info ] [MainThread]:   client_id: None
+[0m14:26:22.955872 [info ] [MainThread]:   token_uri: None
+[0m14:26:22.956617 [info ] [MainThread]:   compute_region: None
+[0m14:26:22.957409 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m14:26:22.958187 [info ] [MainThread]:   gcs_bucket: None
+[0m14:26:22.958931 [info ] [MainThread]:   dataproc_batch: None
+[0m14:26:22.959960 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m14:26:23.198048 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m14:26:23.198744 [debug] [MainThread]: On debug: select 1 as id
+[0m14:26:23.199303 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:26:23.653777 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m14:26:23.654756 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m14:26:23.655384 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/dbt_project.yml> not found
+
+[0m14:26:23.656022 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Unable to generate access token, if you're using impersonate_service_account, make sure your initial account has the "roles/iam.serviceAccountTokenCreator" role on the account you are trying to impersonate.
+  
+  ('invalid_grant: Invalid JWT Signature.', {'error': 'invalid_grant', 'error_description': 'Invalid JWT Signature.'})
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:26:23.657393 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 4.0164337, "process_in_blocks": "2536", "process_kernel_time": 0.676095, "process_mem_max_rss": "371968", "process_out_blocks": "24", "process_user_time": 6.594018}
+[0m14:26:23.658148 [debug] [MainThread]: Command `dbt debug` failed at 14:26:23.658002 after 4.02 seconds
+[0m14:26:23.658671 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:26:23.659233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e50bd76fe00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e509e74ef60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e509d932960>]}
+[0m14:26:23.659958 [debug] [MainThread]: Flushing usage events
+[0m14:26:24.059211 [debug] [MainThread]: An error was encountered while trying to flush usage events

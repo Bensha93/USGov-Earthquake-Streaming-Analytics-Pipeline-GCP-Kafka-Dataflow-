@@ -23,7 +23,13 @@ value_schema_str = """
     {"name": "url", "type": ["null", "string"], "default": null},
     {"name": "lon", "type": ["null", "double"], "default": null},
     {"name": "lat", "type": ["null", "double"], "default": null},
-    {"name": "depth_km", "type": ["null", "double"], "default": null}
+    {"name": "depth_km", "type": ["null", "double"], "default": null},
+    {"name": "felt", "type": ["null", "int"], "default": null},
+    {"name": "cdi", "type": ["null", "float"], "default": null},
+    {"name": "mmi", "type": ["null", "float"], "default": null},
+    {"name": "alert", "type": ["null", "string"], "default": null},
+    {"name": "tsunami", "type": ["null", "int"], "default": null},
+    {"name": "type", "type": ["null", "string"], "default": null}
   ]
 }
 """
@@ -81,7 +87,13 @@ def fetch_and_send():
             "url": props.get("url"),
             "lon": coords[0],
             "lat": coords[1],
-            "depth_km": coords[2]
+            "depth_km": coords[2],
+            "felt": props.get("felt"),
+            "cdi": props.get("cdi"),
+            "mmi": props.get("mmi"),
+            "alert": props.get("alert"),
+            "tsunami": props.get("tsunami"),
+            "type": props.get("type")
         }
 
         producer.produce(topic=TOPIC, key=eid, value=msg, on_delivery=delivery_report)

@@ -1,0 +1,34 @@
+
+version: 2
+
+sources:
+  - name: earthquake_data
+    database: earthquake-475820
+    schema: earthquake_data
+    tables:
+      - name: usgs_events
+        description: "Raw USGS earthquake feed loaded from Confluent -> BigQuery"
+        columns:
+          - name: id
+            tests:
+              - not_null
+              - unique
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
