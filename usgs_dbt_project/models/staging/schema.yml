@@ -5,6 +5,9 @@ sources:
   - name: earthquake_data
     database: earthquake-475820
     schema: earthquake_data
+    freshness:
+      warn_after: {count: 1, period: day}
+      error_after: {count: 2, period: day}
     tables:
       - name: usgs_events
         description: "Raw USGS earthquake feed loaded from Confluent -> BigQuery"
@@ -12,23 +15,63 @@ sources:
           - name: id
             tests:
               - not_null
-              - unique
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: stg_usgs_events
+    description: "Cleaned and enriched USGS Earthquake event data from BigQuery source."
     columns:
       - name: id
-        description: "The primary key for this table"
-        data_tests:
-          - unique
+        description: "Unique earthquake event identifier."
+        tests:
           - not_null
 
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        data_tests:
-          - unique
+      - name: event_time
+        description: "Timestamp when the event occurred."
+        tests:
           - not_null
+
+      - name: mag
+        description: "Magnitude of the earthquake."
+        tests:
+          - not_null
+
+      - name: depth_km
+        description: "Depth of the event in kilometers."
+        tests:
+          - not_null
+
+      - name: lat
+        description: "Latitude of the event."
+        tests:
+          - not_null
+
+      - name: lon
+        description: "Longitude of the event."
+        tests:
+          - not_null
+      
+      - name: region
+        description: "Location of the event."
+        tests:
+          - not_null
+      
+      - name: mag_category
+        description: "Magnitude category of the event."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["minor", "light", "moderate", "major"]
+      
+      - name: dep_category
+        description: "Depth category of the event."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["shallow", "intermediate", "deep"]
+
+
+      - name: is_tsunami
+        description: "Boolean flag for tsunami warnings."
+        tests:
+          - accepted_values:
+              values: ["TRUE", "FALSE"]

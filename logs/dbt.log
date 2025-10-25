@@ -163,3 +163,320 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m14:26:23.659233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e50bd76fe00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e509e74ef60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e509d932960>]}
 [0m14:26:23.659958 [debug] [MainThread]: Flushing usage events
 [0m14:26:24.059211 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:06:04.759439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d2990365460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d2991920140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d298fd8c0e0>]}
+
+
+============================== 02:06:04.764219 | 105675e9-cc83-4efa-b9b3-91a3054bfc7a ==============================
+[0m02:06:04.764219 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m02:06:04.765114 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'use_colors': 'True', 'profiles_dir': '/home/bensha02019/.dbt', 'introspect': 'True', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'log_format': 'default', 'fail_fast': 'False', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'target_path': 'None', 'printer_width': '80', 'empty': 'None', 'use_experimental_parser': 'False', 'static_parser': 'True', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt debug'}
+[0m02:06:04.778017 [info ] [MainThread]: dbt version: 1.11.0-b3
+[0m02:06:04.778769 [info ] [MainThread]: python version: 3.12.3
+[0m02:06:04.779385 [info ] [MainThread]: python path: /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/bin/python
+[0m02:06:04.779991 [info ] [MainThread]: os info: Linux-6.6.105+-x86_64-with-glibc2.39
+[0m02:06:08.103869 [info ] [MainThread]: Using profiles dir at /home/bensha02019/.dbt
+[0m02:06:08.104782 [info ] [MainThread]: Using profiles.yml file at /home/bensha02019/.dbt/profiles.yml
+[0m02:06:08.105434 [info ] [MainThread]: Using dbt_project.yml file at /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/dbt_project.yml
+[0m02:06:08.106141 [info ] [MainThread]: adapter type: bigquery
+[0m02:06:08.106766 [info ] [MainThread]: adapter version: 1.10.2
+[0m02:06:08.107401 [info ] [MainThread]: Configuration:
+[0m02:06:08.108089 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m02:06:08.108726 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m02:06:08.109334 [info ] [MainThread]: Required dependencies:
+[0m02:06:08.110040 [debug] [MainThread]: Executing "git --help"
+[0m02:06:08.113401 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m02:06:08.114068 [debug] [MainThread]: STDERR: "b''"
+[0m02:06:08.114537 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m02:06:08.115192 [info ] [MainThread]: Connection:
+[0m02:06:08.115909 [info ] [MainThread]:   method: service-account
+[0m02:06:08.116511 [info ] [MainThread]:   database: earthquake-475820
+[0m02:06:08.117239 [info ] [MainThread]:   execution_project: earthquake-475820
+[0m02:06:08.117865 [info ] [MainThread]:   schema: earthquake_data
+[0m02:06:08.118451 [info ] [MainThread]:   location: EU
+[0m02:06:08.119080 [info ] [MainThread]:   priority: interactive
+[0m02:06:08.119697 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m02:06:08.120312 [info ] [MainThread]:   impersonate_service_account: None
+[0m02:06:08.120958 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m02:06:08.121635 [info ] [MainThread]:   job_retries: 1
+[0m02:06:08.122281 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m02:06:08.122846 [info ] [MainThread]:   job_execution_timeout_seconds: 600
+[0m02:06:08.123382 [info ] [MainThread]:   timeout_seconds: 600
+[0m02:06:08.123953 [info ] [MainThread]:   client_id: None
+[0m02:06:08.124488 [info ] [MainThread]:   token_uri: None
+[0m02:06:08.125078 [info ] [MainThread]:   compute_region: None
+[0m02:06:08.125608 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m02:06:08.126224 [info ] [MainThread]:   gcs_bucket: None
+[0m02:06:08.126864 [info ] [MainThread]:   dataproc_batch: None
+[0m02:06:08.127843 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m02:06:08.393793 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m02:06:08.394481 [debug] [MainThread]: On debug: select 1 as id
+[0m02:06:08.395082 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:06:08.395776 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: '$GOOGLE_APPLICATION_CREDENTIALS''
+[0m02:06:08.396416 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m02:06:08.397167 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: '$GOOGLE_APPLICATION_CREDENTIALS'
+[0m02:06:08.397738 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m02:06:08.398375 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m02:06:08.399455 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/dbt_project.yml> not found
+
+[0m02:06:08.400081 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m02:06:08.401531 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 3.7211661, "process_in_blocks": "0", "process_kernel_time": 0.636029, "process_mem_max_rss": "379568", "process_out_blocks": "24", "process_user_time": 5.499542}
+[0m02:06:08.402606 [debug] [MainThread]: Command `dbt debug` failed at 02:06:08.402451 after 3.72 seconds
+[0m02:06:08.403277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d298fffd700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d296e2023c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d296e5b10d0>]}
+[0m02:06:08.404033 [debug] [MainThread]: Flushing usage events
+[0m02:06:08.807818 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:14:13.022013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95bee91310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95be2b3800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95bf0e1e20>]}
+
+
+============================== 02:14:13.027007 | a09a46fb-b92e-47ee-9800-2773a6bb7a12 ==============================
+[0m02:14:13.027007 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m02:14:13.027867 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'use_colors': 'True', 'write_json': 'True', 'warn_error': 'None', 'version_check': 'True', 'log_format': 'default', 'static_parser': 'True', 'quiet': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/home/bensha02019/.dbt', 'log_cache_events': 'False', 'no_print': 'None', 'empty': 'None', 'introspect': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'debug': 'False', 'partial_parse': 'True'}
+[0m02:14:13.040208 [info ] [MainThread]: dbt version: 1.11.0-b3
+[0m02:14:13.040906 [info ] [MainThread]: python version: 3.12.3
+[0m02:14:13.041488 [info ] [MainThread]: python path: /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/bin/python
+[0m02:14:13.042035 [info ] [MainThread]: os info: Linux-6.6.105+-x86_64-with-glibc2.39
+[0m02:14:16.347417 [info ] [MainThread]: Using profiles dir at /home/bensha02019/.dbt
+[0m02:14:16.348224 [info ] [MainThread]: Using profiles.yml file at /home/bensha02019/.dbt/profiles.yml
+[0m02:14:16.348965 [info ] [MainThread]: Using dbt_project.yml file at /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/dbt_project.yml
+[0m02:14:16.349547 [info ] [MainThread]: adapter type: bigquery
+[0m02:14:16.350129 [info ] [MainThread]: adapter version: 1.10.2
+[0m02:14:16.350735 [info ] [MainThread]: Configuration:
+[0m02:14:16.351252 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m02:14:16.351826 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m02:14:16.352366 [info ] [MainThread]: Required dependencies:
+[0m02:14:16.352989 [debug] [MainThread]: Executing "git --help"
+[0m02:14:16.356313 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m02:14:16.356975 [debug] [MainThread]: STDERR: "b''"
+[0m02:14:16.357591 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m02:14:16.358184 [info ] [MainThread]: Connection:
+[0m02:14:16.358797 [info ] [MainThread]:   method: service-account
+[0m02:14:16.359310 [info ] [MainThread]:   database: earthquake-475820
+[0m02:14:16.359886 [info ] [MainThread]:   execution_project: earthquake-475820
+[0m02:14:16.360400 [info ] [MainThread]:   schema: earthquake_data
+[0m02:14:16.360964 [info ] [MainThread]:   location: EU
+[0m02:14:16.361489 [info ] [MainThread]:   priority: interactive
+[0m02:14:16.362048 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m02:14:16.362559 [info ] [MainThread]:   impersonate_service_account: None
+[0m02:14:16.363133 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m02:14:16.363706 [info ] [MainThread]:   job_retries: 1
+[0m02:14:16.364197 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m02:14:16.364943 [info ] [MainThread]:   job_execution_timeout_seconds: 600
+[0m02:14:16.365498 [info ] [MainThread]:   timeout_seconds: 600
+[0m02:14:16.366069 [info ] [MainThread]:   client_id: None
+[0m02:14:16.366583 [info ] [MainThread]:   token_uri: None
+[0m02:14:16.367146 [info ] [MainThread]:   compute_region: None
+[0m02:14:16.367695 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m02:14:16.368260 [info ] [MainThread]:   gcs_bucket: None
+[0m02:14:16.368889 [info ] [MainThread]:   dataproc_batch: None
+[0m02:14:16.369777 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m02:14:16.636808 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m02:14:16.637495 [debug] [MainThread]: On debug: select 1 as id
+[0m02:14:16.638077 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:14:16.638676 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: '$GOOGLE_APPLICATION_CREDENTIALS''
+[0m02:14:16.639249 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m02:14:16.639756 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: '$GOOGLE_APPLICATION_CREDENTIALS'
+[0m02:14:16.640255 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m02:14:16.640976 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m02:14:16.642003 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/dbt_project.yml> not found
+
+[0m02:14:16.642539 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m02:14:16.643969 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 3.70043, "process_in_blocks": "0", "process_kernel_time": 0.703286, "process_mem_max_rss": "379456", "process_out_blocks": "24", "process_user_time": 5.422554}
+[0m02:14:16.645075 [debug] [MainThread]: Command `dbt debug` failed at 02:14:16.644912 after 3.70 seconds
+[0m02:14:16.645739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f959ce5f920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95bde5bda0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95bde59220>]}
+[0m02:14:16.646454 [debug] [MainThread]: Flushing usage events
+[0m02:14:17.066934 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:21:29.149579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d10bb109df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d10bab621b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d10bab61b50>]}
+
+
+============================== 02:21:29.154234 | 6a0616e1-e0f8-4c86-a342-e048fc67f9fc ==============================
+[0m02:21:29.154234 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m02:21:29.155134 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'static_parser': 'True', 'log_path': '/home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/logs', 'invocation_command': 'dbt debug', 'debug': 'False', 'printer_width': '80', 'version_check': 'True', 'target_path': 'None', 'use_colors': 'True', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'quiet': 'False', 'use_experimental_parser': 'False', 'warn_error': 'None', 'introspect': 'True', 'log_format': 'default', 'log_cache_events': 'False', 'partial_parse': 'True', 'profiles_dir': '/home/bensha02019/.dbt', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False'}
+[0m02:21:29.167386 [info ] [MainThread]: dbt version: 1.11.0-b3
+[0m02:21:29.168070 [info ] [MainThread]: python version: 3.12.3
+[0m02:21:29.168657 [info ] [MainThread]: python path: /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/bin/python
+[0m02:21:29.169228 [info ] [MainThread]: os info: Linux-6.6.105+-x86_64-with-glibc2.39
+[0m02:21:32.477776 [info ] [MainThread]: Using profiles dir at /home/bensha02019/.dbt
+[0m02:21:32.478717 [info ] [MainThread]: Using profiles.yml file at /home/bensha02019/.dbt/profiles.yml
+[0m02:21:32.479414 [info ] [MainThread]: Using dbt_project.yml file at /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/dbt_project.yml
+[0m02:21:32.480101 [info ] [MainThread]: adapter type: bigquery
+[0m02:21:32.480793 [info ] [MainThread]: adapter version: 1.10.2
+[0m02:21:32.637353 [info ] [MainThread]: Configuration:
+[0m02:21:32.638217 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m02:21:32.638919 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m02:21:32.639553 [info ] [MainThread]: Required dependencies:
+[0m02:21:32.640259 [debug] [MainThread]: Executing "git --help"
+[0m02:21:32.643451 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m02:21:32.644116 [debug] [MainThread]: STDERR: "b''"
+[0m02:21:32.644792 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m02:21:32.645545 [info ] [MainThread]: Connection:
+[0m02:21:32.646266 [info ] [MainThread]:   method: service-account
+[0m02:21:32.646870 [info ] [MainThread]:   database: earthquake-475820
+[0m02:21:32.647464 [info ] [MainThread]:   execution_project: earthquake-475820
+[0m02:21:32.648119 [info ] [MainThread]:   schema: earthquake_data
+[0m02:21:32.648778 [info ] [MainThread]:   location: EU
+[0m02:21:32.649369 [info ] [MainThread]:   priority: interactive
+[0m02:21:32.650035 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m02:21:32.650633 [info ] [MainThread]:   impersonate_service_account: None
+[0m02:21:32.651326 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m02:21:32.652089 [info ] [MainThread]:   job_retries: 1
+[0m02:21:32.652658 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m02:21:32.653266 [info ] [MainThread]:   job_execution_timeout_seconds: 600
+[0m02:21:32.653853 [info ] [MainThread]:   timeout_seconds: 600
+[0m02:21:32.654410 [info ] [MainThread]:   client_id: None
+[0m02:21:32.655047 [info ] [MainThread]:   token_uri: None
+[0m02:21:32.655673 [info ] [MainThread]:   compute_region: None
+[0m02:21:32.656322 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m02:21:32.657054 [info ] [MainThread]:   gcs_bucket: None
+[0m02:21:32.657671 [info ] [MainThread]:   dataproc_batch: None
+[0m02:21:32.658519 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m02:21:32.935220 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m02:21:32.935932 [debug] [MainThread]: On debug: select 1 as id
+[0m02:21:32.936559 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:21:32.937249 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: '$GOOGLE_APPLICATION_CREDENTIALS''
+[0m02:21:32.937926 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m02:21:32.938433 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: '$GOOGLE_APPLICATION_CREDENTIALS'
+[0m02:21:32.939015 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m02:21:32.939540 [info ] [MainThread]: [31m1 check failed:[0m
+[0m02:21:32.940125 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m02:21:32.941522 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 3.8716004, "process_in_blocks": "0", "process_kernel_time": 0.690726, "process_mem_max_rss": "381560", "process_out_blocks": "24", "process_user_time": 5.650253}
+[0m02:21:32.942596 [debug] [MainThread]: Command `dbt debug` failed at 02:21:32.942438 after 3.87 seconds
+[0m02:21:32.943260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d10ba3f3b60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d109988e1b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d109947ffe0>]}
+[0m02:21:32.943947 [debug] [MainThread]: Flushing usage events
+[0m02:21:33.350144 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:23:43.092589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1a4953440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1a4f2ab70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1a267b320>]}
+
+
+============================== 02:23:43.097270 | da95ef78-e088-4937-bd80-73c7250e0f98 ==============================
+[0m02:23:43.097270 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m02:23:43.098278 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'profiles_dir': '/home/bensha02019/.dbt', 'invocation_command': 'dbt run', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'static_parser': 'True', 'warn_error': 'None', 'use_colors': 'True', 'log_format': 'default', 'quiet': 'False', 'version_check': 'True', 'no_print': 'None', 'fail_fast': 'False', 'empty': 'False', 'debug': 'False', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'log_path': '/home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/logs', 'write_json': 'True', 'partial_parse': 'True', 'printer_width': '80', 'introspect': 'True'}
+[0m02:23:46.567417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'da95ef78-e088-4937-bd80-73c7250e0f98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1a2432c90>]}
+[0m02:23:46.661068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'da95ef78-e088-4937-bd80-73c7250e0f98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1829b5a60>]}
+[0m02:23:46.662113 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m02:23:46.942186 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m02:23:46.943341 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m02:23:46.944037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'da95ef78-e088-4937-bd80-73c7250e0f98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db18140df40>]}
+[0m02:23:48.312178 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.usgs_dbt_project.example
+[0m02:23:48.320327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'da95ef78-e088-4937-bd80-73c7250e0f98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1814308f0>]}
+[0m02:23:48.373187 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/target/manifest.json
+[0m02:23:48.375840 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/target/semantic_manifest.json
+[0m02:23:48.393264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'da95ef78-e088-4937-bd80-73c7250e0f98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db18109de80>]}
+[0m02:23:48.394420 [info ] [MainThread]: Found 508 macros
+[0m02:23:48.395215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'da95ef78-e088-4937-bd80-73c7250e0f98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1811fabd0>]}
+[0m02:23:48.397219 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m02:23:48.398221 [debug] [MainThread]: Command end result
+[0m02:23:48.429752 [debug] [MainThread]: Wrote artifact WritableManifest to /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/target/manifest.json
+[0m02:23:48.432445 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/target/semantic_manifest.json
+[0m02:23:48.437455 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/target/run_results.json
+[0m02:23:48.439049 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.426338, "process_in_blocks": "0", "process_kernel_time": 0.721853, "process_mem_max_rss": "384464", "process_out_blocks": "3056", "process_user_time": 7.141096}
+[0m02:23:48.440106 [debug] [MainThread]: Command `dbt run` succeeded at 02:23:48.439942 after 5.43 seconds
+[0m02:23:48.440774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1a3279670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1a32c4830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db1a32c57c0>]}
+[0m02:23:48.441541 [debug] [MainThread]: Flushing usage events
+[0m02:23:48.862341 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:25:37.134011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e7004438440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e700604ebd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e7003d01220>]}
+
+
+============================== 02:25:37.138963 | 057d1ef3-0fd6-448a-bbac-2c8ec00521ca ==============================
+[0m02:25:37.138963 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m02:25:37.139923 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'use_experimental_parser': 'False', 'version_check': 'True', 'fail_fast': 'False', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'partial_parse': 'True', 'write_json': 'True', 'warn_error': 'None', 'static_parser': 'True', 'indirect_selection': 'eager', 'profiles_dir': '/home/bensha02019/.dbt', 'log_path': '/home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/logs', 'printer_width': '80', 'log_cache_events': 'False', 'quiet': 'False', 'use_colors': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'empty': 'None', 'no_print': 'None', 'debug': 'False'}
+[0m02:25:37.152348 [info ] [MainThread]: dbt version: 1.11.0-b3
+[0m02:25:37.153227 [info ] [MainThread]: python version: 3.12.3
+[0m02:25:37.153912 [info ] [MainThread]: python path: /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/bin/python
+[0m02:25:37.154534 [info ] [MainThread]: os info: Linux-6.6.105+-x86_64-with-glibc2.39
+[0m02:25:40.483869 [info ] [MainThread]: Using profiles dir at /home/bensha02019/.dbt
+[0m02:25:40.484625 [info ] [MainThread]: Using profiles.yml file at /home/bensha02019/.dbt/profiles.yml
+[0m02:25:40.485285 [info ] [MainThread]: Using dbt_project.yml file at /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/dbt_project.yml
+[0m02:25:40.485908 [info ] [MainThread]: adapter type: bigquery
+[0m02:25:40.486434 [info ] [MainThread]: adapter version: 1.10.2
+[0m02:25:40.642245 [info ] [MainThread]: Configuration:
+[0m02:25:40.643145 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m02:25:40.643912 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m02:25:40.644543 [info ] [MainThread]: Required dependencies:
+[0m02:25:40.645263 [debug] [MainThread]: Executing "git --help"
+[0m02:25:40.648351 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m02:25:40.649082 [debug] [MainThread]: STDERR: "b''"
+[0m02:25:40.649708 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m02:25:40.650488 [info ] [MainThread]: Connection:
+[0m02:25:40.651228 [info ] [MainThread]:   method: service-account
+[0m02:25:40.651846 [info ] [MainThread]:   database: earthquake-475820
+[0m02:25:40.652457 [info ] [MainThread]:   execution_project: earthquake-475820
+[0m02:25:40.653125 [info ] [MainThread]:   schema: earthquake_data
+[0m02:25:40.653903 [info ] [MainThread]:   location: EU
+[0m02:25:40.654592 [info ] [MainThread]:   priority: interactive
+[0m02:25:40.655334 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m02:25:40.656022 [info ] [MainThread]:   impersonate_service_account: None
+[0m02:25:40.656789 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m02:25:40.657535 [info ] [MainThread]:   job_retries: 1
+[0m02:25:40.658138 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m02:25:40.658721 [info ] [MainThread]:   job_execution_timeout_seconds: 600
+[0m02:25:40.659329 [info ] [MainThread]:   timeout_seconds: 600
+[0m02:25:40.659906 [info ] [MainThread]:   client_id: None
+[0m02:25:40.660456 [info ] [MainThread]:   token_uri: None
+[0m02:25:40.661105 [info ] [MainThread]:   compute_region: None
+[0m02:25:40.661740 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m02:25:40.662386 [info ] [MainThread]:   gcs_bucket: None
+[0m02:25:40.663183 [info ] [MainThread]:   dataproc_batch: None
+[0m02:25:40.664052 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m02:25:40.953941 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m02:25:40.954673 [debug] [MainThread]: On debug: select 1 as id
+[0m02:25:40.955337 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:25:40.956055 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: '$GOOGLE_APPLICATION_CREDENTIALS''
+[0m02:25:40.956779 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m02:25:40.957363 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: '$GOOGLE_APPLICATION_CREDENTIALS'
+[0m02:25:40.957961 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m02:25:40.958694 [info ] [MainThread]: [31m1 check failed:[0m
+[0m02:25:40.959354 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m02:25:40.960978 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 3.9056215, "process_in_blocks": "0", "process_kernel_time": 0.69098, "process_mem_max_rss": "381724", "process_out_blocks": "24", "process_user_time": 5.525495}
+[0m02:25:40.962115 [debug] [MainThread]: Command `dbt debug` failed at 02:25:40.961944 after 3.91 seconds
+[0m02:25:40.962795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e7003d623c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e70050df9b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e6fe28a1070>]}
+[0m02:25:40.963632 [debug] [MainThread]: Flushing usage events
+[0m02:25:41.382104 [debug] [MainThread]: An error was encountered while trying to flush usage events
