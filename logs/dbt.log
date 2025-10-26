@@ -480,3 +480,19 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m02:25:40.962795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e7003d623c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e70050df9b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e6fe28a1070>]}
 [0m02:25:40.963632 [debug] [MainThread]: Flushing usage events
 [0m02:25:41.382104 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:30:51.835593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0f421b8c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0f41accfe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0f41ace390>]}
+
+
+============================== 08:30:51.907819 | 0b5e7fe1-73b8-4a9a-bfbf-50ee389a0d9b ==============================
+[0m08:30:51.907819 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m08:30:51.908935 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'profiles_dir': '/home/bensha02019/.dbt', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False', 'fail_fast': 'False', 'quiet': 'False', 'static_parser': 'True', 'write_json': 'True', 'partial_parse': 'True', 'log_format': 'default', 'use_colors': 'True', 'invocation_command': 'dbt run --select stg_usgs_events.sql', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'use_experimental_parser': 'False', 'debug': 'False', 'introspect': 'True', 'printer_width': '80', 'version_check': 'True', 'no_print': 'None'}
+[0m08:30:51.909818 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m08:30:51.911392 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.17817096, "process_in_blocks": "16", "process_kernel_time": 0.498295, "process_mem_max_rss": "99384", "process_out_blocks": "8", "process_user_time": 2.505047}
+[0m08:30:51.912141 [debug] [MainThread]: Command `dbt run` failed at 08:30:51.911992 after 0.18 seconds
+[0m08:30:51.912809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0f421d7710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0f419457c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0f4131e090>]}
+[0m08:30:51.913510 [debug] [MainThread]: Flushing usage events
+[0m08:30:52.338358 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,4 +1,3 @@
-
 version: 2
 
 sources:
@@ -15,6 +14,20 @@ sources:
           - name: id
             tests:
               - not_null
+
+      - name: continent_bounds
+        description: "SPARQL-extracted continent coordinate bounds table used to enrich earthquake events with continent labels"
+        columns:
+          - name: continentLabel
+            description: "Name of the continent (Africa, Asia, Europe, South America)"
+          - name: minLat
+            description: "Minimum latitude of the continent"
+          - name: maxLat
+            description: "Maximum latitude of the continent"
+          - name: minLon
+            description: "Minimum longitude of the continent"
+          - name: maxLon
+            description: "Maximum longitude of the continent"
 
 models:
   - name: stg_usgs_events
@@ -60,18 +73,20 @@ models:
         tests:
           - not_null
           - accepted_values:
-              values: ["minor", "light", "moderate", "major"]
+              arguments:
+                values: ["Minor", "Light", "Moderate", "Major"]
       
       - name: dep_category
         description: "Depth category of the event."
         tests:
           - not_null
           - accepted_values:
-              values: ["shallow", "intermediate", "deep"]
-
+              arguments:
+                values: ["Shallow", "Intermediate", "Deep"]
 
       - name: is_tsunami
         description: "Boolean flag for tsunami warnings."
         tests:
           - accepted_values:
-              values: ["TRUE", "FALSE"]
+              arguments:
+                values: ["TRUE", "FALSE"]
