@@ -1,0 +1,7 @@
+#!/home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/venv/bin/python
+import json_merge_patch.cli
+json_merge_patch.cli.main()
+
+
+
+
