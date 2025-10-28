@@ -21,7 +21,7 @@ It’s designed to demonstrate **end-to-end mastery** of modern **data engineeri
 
 Below is the full architecture showing all major components:
 
-![Architecture Diagram](images/architecture_diagram.png)
+![Architecture Diagram](Looker Studio visuals/Architecture-home.png)
 
 > *Full architecture: USGS → Kafka (Confluent Cloud) → BigQuery → dbt → Airflow → Looker Studio (on GCP)*
 
@@ -48,9 +48,6 @@ Below is the full architecture showing all major components:
 * Returns global earthquake data (location, magnitude, depth, and time).
 * Queried periodically by the Kafka producer.
 
-![USGS Feed Example](images/usgs_feed_example.png)
-
-> *Sample of raw GeoJSON feed from USGS API.*
 
 ---
 
@@ -62,7 +59,7 @@ File: `producer_usgs_.py`
 * Publishes messages to **Confluent Kafka topic** `usgs_earthquakes`.
 * Configured with Avro serializer & Confluent Schema Registry.
 
-![Kafka Producer Logs](images/producer_logs.png)
+![Kafka Producer Logs](Looker Studio visuals/Producer-Terminal.png)
 
 > *Producer publishing live USGS data to Kafka topic.*
 
@@ -74,7 +71,7 @@ File: `producer_usgs_.py`
 * Manages **streaming ingestion, topic partitions**, and **Avro schemas**.
 * Provides **real-time monitoring**, **scalability**, and **connectivity** to GCP.
 
-![Confluent Dashboard](images/confluent_dashboard.png)
+![Confluent Dashboard](Looker Studio visuals/Confluent-Schemas.png)
 
 > *Confluent Cloud console showing Kafka topic, connectors, and Schema Registry.*
 
@@ -123,7 +120,7 @@ Directory: `/usgs_dbt_project`
   * **Daily Earthquake Trend Line**
   * **Impact Severity Indicator (Richter scale)**
 
-![Looker Dashboard](images/looker_studio_dashboard.png)
+![Looker Dashboard](Looker Studio visuals/USGS_Earthquake_Reporting.pdf)
 
 > *Real-time dashboard powered by Looker Studio connected to BigQuery marts.*
 
@@ -142,10 +139,6 @@ Directory: `/usgs_dbt_project`
 ✔️ **Looker Studio dashboards** for visual analytics
 
 ✔️ Cloud-native, production-grade **GCP implementation**
-
-![Full Stack Overview](images/full_stack_overview.png)
-
-> *End-to-end tech stack view — from ingestion to visualization.*
 
 ---
 
@@ -217,15 +210,6 @@ dbt run
 
 ---
 
-## 🚀 Future Roadmap
-
-* [ ] Integrate **Google Dataflow** for stream enrichment
-* [ ] Add **Slack Alerts** for earthquakes above magnitude 6.0
-* [ ] Deploy **CI/CD** for dbt via GitHub Actions
-* [ ] Enable **Cloud Run** for microservice-based producer deployment
-
----
-
 ## 🏅 Results
 
 ✅ Automated streaming from public API
@@ -238,11 +222,6 @@ dbt run
 
 ✅ Production-ready cloud architecture
 
-![Final Dashboard](images/final_dashboard.png)
-
-> *Final Looker Studio earthquake dashboard — live insights from streaming pipeline.*
-
----
 
 ## 📫 Contact
 
