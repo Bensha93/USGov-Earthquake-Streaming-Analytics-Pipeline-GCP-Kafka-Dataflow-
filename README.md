@@ -21,7 +21,7 @@ It’s designed to demonstrate **end-to-end mastery** of modern **data engineeri
 
 Below is the full architecture showing all major components:
 
-![Architecture Diagram](Looker Studio visuals/Architecture-home.png)
+![Architecture Diagram](https://github.com/Bensha93/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/blob/290af2212ee7454ae8b91bca08fa95b8c02e652e/Looker%20Studio%20visuals/Architecture-home.png)
 
 > *Full architecture: USGS → Kafka (Confluent Cloud) → BigQuery → dbt → Airflow → Looker Studio (on GCP)*
 
@@ -59,7 +59,7 @@ File: `producer_usgs_.py`
 * Publishes messages to **Confluent Kafka topic** `usgs_earthquakes`.
 * Configured with Avro serializer & Confluent Schema Registry.
 
-![Kafka Producer Logs](Looker Studio visuals/Producer-Terminal.png)
+![Kafka Producer Logs](https://github.com/Bensha93/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/blob/286e6ab7115888054287cdc1f2b73fd6e2ce0f4f/Looker%20Studio%20visuals/Producer-Terminal.png)
 
 > *Producer publishing live USGS data to Kafka topic.*
 
@@ -71,7 +71,7 @@ File: `producer_usgs_.py`
 * Manages **streaming ingestion, topic partitions**, and **Avro schemas**.
 * Provides **real-time monitoring**, **scalability**, and **connectivity** to GCP.
 
-![Confluent Dashboard](Looker Studio visuals/Confluent-Schemas.png)
+![Confluent Dashboard](https://github.com/Bensha93/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/blob/286e6ab7115888054287cdc1f2b73fd6e2ce0f4f/Looker%20Studio%20visuals/Confluent-Schemas.png)
 
 > *Confluent Cloud console showing Kafka topic, connectors, and Schema Registry.*
 
@@ -83,6 +83,8 @@ File: `producer_usgs_.py`
 * Dataset: `earthquake_data.usgs_events`
 * Partitioned by ingestion timestamp and region.
 
+
+![Streaming ](https://github.com/Bensha93/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/blob/286e6ab7115888054287cdc1f2b73fd6e2ce0f4f/Looker%20Studio%20visuals/BigQuery-Streaming-.png)
 
 ---
 
@@ -120,7 +122,7 @@ Directory: `/usgs_dbt_project`
   * **Daily Earthquake Trend Line**
   * **Impact Severity Indicator (Richter scale)**
 
-![Looker Dashboard](Looker Studio visuals/USGS_Earthquake_Reporting.pdf)
+![Looker Dashboard](https://github.com/Bensha93/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/blob/286e6ab7115888054287cdc1f2b73fd6e2ce0f4f/Looker%20Studio%20visuals/USGS_Earthquake_Reporting.pdf)
 
 > *Real-time dashboard powered by Looker Studio connected to BigQuery marts.*
 
@@ -227,7 +229,9 @@ dbt run
 
 **Author:** Bensha
 📧 [[bensha2019@outlook.com](mailto:bensha2019@outlook.com)]
+
 🌐 [LinkedIn Profile Here](https://linkedin.com/in/adewole-oyediran)
+
 💻 [GitHub](https://github.com/bensha02019)
 
 
