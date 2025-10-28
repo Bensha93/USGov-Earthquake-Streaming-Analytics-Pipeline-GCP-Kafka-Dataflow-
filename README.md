@@ -104,9 +104,6 @@ Directory: `/usgs_dbt_project`
   * `fact_earthquakes.sql` → Builds analytical fact table.
 * Adds schema tests (uniqueness, relationships, freshness).
 
-![dbt Lineage Graph](images/dbt_lineage_graph.png)
-
-> *dbt model lineage showing transformation flow from staging → mart.*
 
 ---
 
@@ -115,10 +112,6 @@ Directory: `/usgs_dbt_project`
 * Manages scheduling, retries, and dependencies between ingestion and dbt.
 * DAGs for producer job, dbt transformations, and validation checks.
 * Logs and XComs stored in Cloud Composer or local environment.
-
-![Airflow DAG](images/airflow_dag_graph.png)
-
-> *Airflow DAG orchestrating ingestion and transformation tasks.*
 
 ---
 
@@ -142,10 +135,15 @@ Directory: `/usgs_dbt_project`
 ## 🧠 Learning Highlights
 
 ✔️ Real-time streaming architecture using **Kafka + Confluent**
+
 ✔️ Schema governance via **Avro + Schema Registry**
+
 ✔️ Transformation pipelines with **dbt on BigQuery**
+
 ✔️ **Airflow orchestration** for task automation
+
 ✔️ **Looker Studio dashboards** for visual analytics
+
 ✔️ Cloud-native, production-grade **GCP implementation**
 
 ![Full Stack Overview](images/full_stack_overview.png)
