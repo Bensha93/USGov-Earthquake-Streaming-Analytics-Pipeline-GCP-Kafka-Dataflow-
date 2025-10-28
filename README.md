@@ -122,7 +122,7 @@ Directory: `/usgs_dbt_project`
   * **Daily Earthquake Trend Line**
   * **Impact Severity Indicator (Richter scale)**
 
-![Looker Dashboard](https://github.com/Bensha93/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/blob/286e6ab7115888054287cdc1f2b73fd6e2ce0f4f/Looker%20Studio%20visuals/USGS_Earthquake_Reporting.pdf)
+![Looker Dashboard](https://github.com/Bensha93/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/blob/7ec3aea220696678e8d7b818677b03e75372daaf/Looker%20Studio%20visuals/dashboard-picture.png)
 
 > *Real-time dashboard powered by Looker Studio connected to BigQuery marts.*
 
