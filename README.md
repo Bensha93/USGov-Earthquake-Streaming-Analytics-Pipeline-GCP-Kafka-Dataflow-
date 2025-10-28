@@ -86,9 +86,6 @@ File: `producer_usgs_.py`
 * Dataset: `earthquake_data.usgs_events`
 * Partitioned by ingestion timestamp and region.
 
-![BigQuery Table](images/bigquery_table_preview.png)
-
-> *Streaming inserts arriving in real time from Kafka Sink Connector.*
 
 ---
 
@@ -195,10 +192,6 @@ GROUP BY region
 ORDER BY avg_magnitude DESC;
 ```
 
-![BigQuery Results](images/bigquery_query_result.png)
-
-> *Sample analytical query showing average magnitudes by region.*
-
 ---
 
 ## 🏁 Run the Pipeline Locally
@@ -236,9 +229,13 @@ dbt run
 ## 🏅 Results
 
 ✅ Automated streaming from public API
+
 ✅ Real-time ingestion and transformation
+
 ✅ Clean mart schema for analytics
+
 ✅ Interactive visualization in Looker Studio
+
 ✅ Production-ready cloud architecture
 
 ![Final Dashboard](images/final_dashboard.png)
@@ -250,11 +247,8 @@ dbt run
 ## 📫 Contact
 
 **Author:** Bensha
-📧 [[your.email@example.com](mailto:your.email@example.com)]
-🌐 [LinkedIn Profile Here]
-💻 [GitHub: github.com/bensha02019](https://github.com/bensha02019)
+📧 [[bensha2019@outlook.com](mailto:bensha2019@outlook.com)]
+🌐 [LinkedIn Profile Here](https://linkedin.com/in/adewole-oyediran)
+💻 [GitHub](https://github.com/bensha02019)
 
----
 
-Would you like me to **generate the actual image layout mockups** (architecture diagram, Airflow DAG layout, dbt graph, Looker dashboard preview) so you can drop them straight into `/images/` for your README?
-It’ll make your portfolio **look top-tier visually** even before you add real screenshots.
