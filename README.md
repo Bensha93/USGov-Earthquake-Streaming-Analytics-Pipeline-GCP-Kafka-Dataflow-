@@ -124,7 +124,7 @@ Directory: `/usgs_dbt_project`
 
 ![Looker Dashboard](https://github.com/Bensha93/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/blob/7ec3aea220696678e8d7b818677b03e75372daaf/Looker%20Studio%20visuals/dashboard-picture.png)
 
-![Look Report Dashboard](https://lookerstudio.google.com/s/sPEA3kuBwv8)
+[Look Report Dashboard](https://lookerstudio.google.com/s/sPEA3kuBwv8)
 
 > *Real-time dashboard powered by Looker Studio connected to BigQuery marts.*
 
