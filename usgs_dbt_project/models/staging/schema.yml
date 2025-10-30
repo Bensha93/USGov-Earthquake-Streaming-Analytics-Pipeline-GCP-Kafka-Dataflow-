@@ -73,20 +73,17 @@ models:
         tests:
           - not_null
           - accepted_values:
-              arguments:
-                values: ["Minor", "Light", "Moderate", "Major"]
+              values: ["Minor", "Light", "Moderate", "Major"]
       
       - name: dep_category
         description: "Depth category of the event."
         tests:
           - not_null
           - accepted_values:
-              arguments:
-                values: ["Shallow", "Intermediate", "Deep"]
+              values: ["Shallow", "Intermediate", "Deep"]
 
       - name: is_tsunami
         description: "Boolean flag for tsunami warnings."
         tests:
           - accepted_values:
-              arguments:
-                values: ["TRUE", "FALSE"]
+              values: ["TRUE", "FALSE"]

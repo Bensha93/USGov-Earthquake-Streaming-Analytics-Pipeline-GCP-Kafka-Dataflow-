@@ -496,3 +496,126 @@ Runtime Error
 [0m08:30:51.912809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0f421d7710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0f419457c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0f4131e090>]}
 [0m08:30:51.913510 [debug] [MainThread]: Flushing usage events
 [0m08:30:52.338358 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:26:46.815517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2617b445c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f261864ea50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2617b47380>]}
+
+
+============================== 11:26:46.868757 | 5904cfc9-bf6e-4aca-9e84-7db39ab6ee6f ==============================
+[0m11:26:46.868757 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m11:26:46.870181 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/bensha02019/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:26:46.871308 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:26:46.872866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f26182b3080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2618143740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2619f597c0>]}
+[0m11:26:46.873822 [debug] [MainThread]: Flushing usage events
+[0m11:26:47.250824 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:47:06.390490 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eb4ddb3be60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eb4ddd62ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eb4ddb3b920>]}
+
+
+============================== 11:47:06.395896 | 87e2900b-877f-446c-8814-e7927add8e4b ==============================
+[0m11:47:06.395896 [info ] [MainThread]: Running with dbt=1.7.9
+[0m11:47:06.397172 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/bensha02019/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:47:06.398308 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:47:06.401229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eb4dd96fb60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eb4de1c74a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eb4ddb396a0>]}
+[0m11:47:06.402575 [debug] [MainThread]: Flushing usage events
+[0m11:54:59.000806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0ed59a88f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0ed4ffd730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0ed4ffeed0>]}
+
+
+============================== 11:54:59.079341 | 2b74927c-4571-495d-917a-d6c9f065df9c ==============================
+[0m11:54:59.079341 [info ] [MainThread]: Running with dbt=1.10.13
+[0m11:54:59.081024 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/bensha02019/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:54:59.139880 [info ] [MainThread]: dbt version: 1.10.13
+[0m11:54:59.140854 [info ] [MainThread]: python version: 3.12.3
+[0m11:54:59.141740 [info ] [MainThread]: python path: /usr/bin/python3
+[0m11:54:59.142812 [info ] [MainThread]: os info: Linux-6.6.105+-x86_64-with-glibc2.39
+[0m11:54:59.154178 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.bigquery'
+[0m11:54:59.155926 [info ] [MainThread]: Using profiles dir at /home/bensha02019/.dbt
+[0m11:54:59.156915 [info ] [MainThread]: Using profiles.yml file at /home/bensha02019/.dbt/profiles.yml
+[0m11:54:59.157770 [info ] [MainThread]: Using dbt_project.yml file at /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/dbt_project.yml
+[0m11:54:59.158696 [info ] [MainThread]: Configuration:
+[0m11:54:59.159514 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m11:54:59.160342 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:54:59.161137 [info ] [MainThread]: Required dependencies:
+[0m11:54:59.162021 [debug] [MainThread]: Executing "git --help"
+[0m11:54:59.168105 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:54:59.169303 [debug] [MainThread]: STDERR: "b''"
+[0m11:54:59.170158 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:54:59.171061 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m11:54:59.172004 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m11:54:59.172905 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "usgs_dbt_project", target "dev" invalid: Runtime Error
+    Could not find adapter type bigquery!
+
+
+[0m11:54:59.173769 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/dbt_project.yml> not found
+
+[0m11:54:59.176122 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.30316216, "process_in_blocks": "48032", "process_kernel_time": 0.532291, "process_mem_max_rss": "102164", "process_out_blocks": "24", "process_user_time": 3.360623}
+[0m11:54:59.177724 [debug] [MainThread]: Command `dbt debug` failed at 11:54:59.177105 after 0.30 seconds
+[0m11:54:59.178705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0ed4bdffb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0ed3f815e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0ed3f82300>]}
+[0m11:54:59.179802 [debug] [MainThread]: Flushing usage events
+[0m11:54:59.557134 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:55:03.337438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea4fada9a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea4fa3e4c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea4fca31d60>]}
+
+
+============================== 11:55:03.343800 | a56a126f-9211-4b02-bb29-16d9b51ea87a ==============================
+[0m11:55:03.343800 [info ] [MainThread]: Running with dbt=1.10.13
+[0m11:55:03.345068 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/bensha02019/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:55:03.346038 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:55:03.347617 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.12716377, "process_in_blocks": "0", "process_kernel_time": 0.278474, "process_mem_max_rss": "101632", "process_out_blocks": "0", "process_user_time": 2.893236}
+[0m11:55:03.348460 [debug] [MainThread]: Command `dbt run` failed at 11:55:03.348298 after 0.13 seconds
+[0m11:55:03.349061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea4faaf14c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea4f9e76360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea4fe29f6e0>]}
+[0m11:55:03.349758 [debug] [MainThread]: Flushing usage events
+[0m11:55:03.711596 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:01:25.159461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d5de530e5a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d5de5734770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d5de51961e0>]}
+
+
+============================== 12:01:25.167084 | 52229519-f15e-475b-9a7c-37fc99323896 ==============================
+[0m12:01:25.167084 [info ] [MainThread]: Running with dbt=1.10.13
+[0m12:01:25.168270 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/bensha02019/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:01:25.185713 [info ] [MainThread]: dbt version: 1.10.13
+[0m12:01:25.186815 [info ] [MainThread]: python version: 3.12.3
+[0m12:01:25.187757 [info ] [MainThread]: python path: /usr/bin/python3
+[0m12:01:25.188502 [info ] [MainThread]: os info: Linux-6.6.105+-x86_64-with-glibc2.39
+[0m12:01:25.196447 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.bigquery'
+[0m12:01:25.198153 [info ] [MainThread]: Using profiles dir at /home/bensha02019/.dbt
+[0m12:01:25.199022 [info ] [MainThread]: Using profiles.yml file at /home/bensha02019/.dbt/profiles.yml
+[0m12:01:25.199863 [info ] [MainThread]: Using dbt_project.yml file at /home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/dbt_project.yml
+[0m12:01:25.200743 [info ] [MainThread]: Configuration:
+[0m12:01:25.201549 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m12:01:25.202518 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m12:01:25.203685 [info ] [MainThread]: Required dependencies:
+[0m12:01:25.204928 [debug] [MainThread]: Executing "git --help"
+[0m12:01:25.209900 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:01:25.211047 [debug] [MainThread]: STDERR: "b''"
+[0m12:01:25.211705 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:01:25.213080 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m12:01:25.213895 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m12:01:25.214546 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "usgs_dbt_project", target "dev" invalid: Runtime Error
+    Could not find adapter type bigquery!
+
+
+[0m12:01:25.215151 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/bensha02019/USGov-Earthquake-Streaming-Analytics-Pipeline-GCP-Kafka-Dataflow-/dbt_project.yml> not found
+
+[0m12:01:25.217000 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.17275383, "process_in_blocks": "0", "process_kernel_time": 0.305577, "process_mem_max_rss": "102252", "process_out_blocks": "24", "process_user_time": 2.990426}
+[0m12:01:25.217909 [debug] [MainThread]: Command `dbt debug` failed at 12:01:25.217716 after 0.17 seconds
+[0m12:01:25.218847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d5de4e3c770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d5de4a4ecf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d5de4930b00>]}
+[0m12:01:25.219665 [debug] [MainThread]: Flushing usage events
+[0m12:01:25.591833 [debug] [MainThread]: An error was encountered while trying to flush usage events
